@@ -11,7 +11,7 @@ function Cat() {
 // Michaels_Branch
   const petGender = faker.name.firstName()
   const petSpecies = faker.animal.cat()
-  const petPrice = faker.finance.amount(700, 1000, 2, '$')
+  const petPrice = faker.finance.amount(700, 1000, 2, '£')
   
 
 //   const addBasket = (item) => {
@@ -46,19 +46,30 @@ fetchCats();
     <div className='wrapper'>
       {cats.map( (cat, index) => (
         <>
-        {error && <p>{error}</p>
-        <div className='cat-container'>      
+
+        {error && <p>{error}</p>}
+
+        <div className='cat-container'> 
+
         <h1>{faker.name.firstName()}</h1>
+
         <h1>{faker.animal.cat()}</h1>
+
         <img src={cat.url} alt="Cat"/>
+
         <h1>{faker.finance.amount(700, 1000, 2, '£')}</h1>
-           <Basket key={index} />
-             </>
+        <Basket key={index} />
 
 
-      ))}
+        </>
+        ))}
+
+      </div>
+      </div>
+      
     
     </div>
+    
   );
 
 }
