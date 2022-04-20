@@ -1,0 +1,17 @@
+* {
+	margin:opx;
+	padding:0px;
+	
+}
+img{
+	float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+	border-radius: 10px;
+
+}
+.Cat{
+	display:flex;
+	flex-direction: column;
+}
