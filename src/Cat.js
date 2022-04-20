@@ -7,6 +7,8 @@ function Cat() {
   const [basket, setBasket] = useState([]);
   const [error, setError] = useState(null)
 
+// Michaels_Branch
+
 
   const petGender = faker.name.firstName()
   const petSpecies = faker.animal.cat()
@@ -15,6 +17,7 @@ function Cat() {
   const addBasket = (item) => {
     setBasket([...basket, item])
 }
+// >>>>>>> main
   useEffect(() => {
     const fetchCats = async () => {
       try {
@@ -43,9 +46,9 @@ fetchCats();
       {cats.map( (cat) => (
         <>
         {error && <p>{error}</p>}
-        <h1>{petPrice}</h1>
-        <h1>{petGender}</h1>
-        <h1>{petSpecies}</h1>
+        <h1>{faker.name.firstName()}</h1>
+        <h1>{faker.animal.cat()}</h1>
+        <h1>{faker.finance.amount(700, 1000, 2, '£')}</h1>
         <img src={cat.url} alt="Cat"/>
         </>
       ))}
