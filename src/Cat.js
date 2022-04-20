@@ -4,8 +4,20 @@ import { faker } from '@faker-js/faker';
 
 function Cat() {
   const [cats, setCats] = useState([]);
+  const [basket, setBasket] = useState([]);
   const [error, setError] = useState(null)
 
+// Michaels_Branch
+
+
+  const petGender = faker.name.firstName()
+  const petSpecies = faker.animal.cat()
+  const petPrice = faker.finance.amount(700, 1000, 2, '$')
+  
+  const addBasket = (item) => {
+    setBasket([...basket, item])
+}
+// >>>>>>> main
   useEffect(() => {
     const fetchCats = async () => {
       try {
@@ -27,7 +39,10 @@ fetchCats();
 
 
   return (
-    <div className="Cat">   
+    <div className="Cat">
+      <button
+          basket={basket}>Add to Basket
+        </button>   
       {cats.map( (cat) => (
         <>
         {error && <p>{error}</p>}
