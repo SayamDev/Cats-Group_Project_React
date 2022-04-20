@@ -32,16 +32,22 @@ fetchCats();
 
 
   return (
-    <div className="Cat">   
+    <div className="Cat">  
+    <div className='wrapper'>
       {cats.map( (cat) => (
         <>
         {error && <p>{error}</p>}
-        <h1>{petPrice}</h1>
+        
+        <div className='cat-container'>
+        
         <h1>{petGender}</h1>
         <h1>{petSpecies}</h1>
         <img src={cat.url} alt="Cat"/>
+        <h3>Cost:{petPrice}</h3>
+        </div>
         </>
       ))}
+      </div> 
     </div>
   );
 
