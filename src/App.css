@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -31,4 +32,22 @@
     max-width: 100%;
     height: auto;
     object-fit: cover;
+/* 
+* {
+	margin:opx;
+	padding:0px;
+	
 }
+img{
+	float: left;
+    width:  300px;
+    height: 300px;
+    object-fit: cover;
+	border-radius: 10px;
+
+}
+.Cat{
+	display:flex;
+	flex-direction: column;
+
+} */
