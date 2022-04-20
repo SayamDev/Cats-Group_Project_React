@@ -9,7 +9,7 @@ function Cat() {
 
   const petGender = faker.name.firstName()
   const petSpecies = faker.animal.cat()
-  const petPrice = faker.finance.amount(500, 1000, 2, '$')
+  const petPrice = faker.finance.amount(700, 1000, 2, '$')
   
   useEffect(() => {
     const fetchCats = async () => {
