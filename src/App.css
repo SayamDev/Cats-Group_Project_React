@@ -1,3 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.Cat {
+   border: 2px solid red;
+
+}
+
+.wrapper{
+    border: 2px solid blue;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #F9DCC4;
+
+}
+
+.cat-container{
+    width: 25%;
+    border: 10px solid #FEC89A; 
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.cat-container img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+/* 
 * {
 	margin:opx;
 	padding:0px;
@@ -14,4 +49,5 @@ img{
 .Cat{
 	display:flex;
 	flex-direction: column;
-}
+
+} */
