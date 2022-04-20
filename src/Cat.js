@@ -60,11 +60,10 @@ fetchCats();
         <h1>{faker.finance.amount(700, 1000, 2, '£')}</h1>
         <Basket key={index} />
 
-
+      </div>
         </>
         ))}
 
-      </div>
       </div>
       
     
@@ -73,5 +72,5 @@ fetchCats();
   );
 
 }
-
+      
 export default Cat;
