@@ -9,6 +9,7 @@ function Cat() {
 
   const petGender = faker.name.firstName()
   const petSpecies = faker.animal.cat()
+  const petPrice = faker.finance.amount(500, 1000)
   
   useEffect(() => {
     const fetchCats = async () => {
@@ -35,6 +36,7 @@ fetchCats();
       {cats.map( (cat) => (
         <>
         {error && <p>{error}</p>}
+        <h1>{petPrice}</h1>
         <h1>{petGender}</h1>
         <h1>{petSpecies}</h1>
         <img src={cat.url} alt="Cat"/>
@@ -42,7 +44,7 @@ fetchCats();
       ))}
     </div>
   );
-        
+
 }
 
 export default Cat;
