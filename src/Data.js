@@ -28,7 +28,7 @@ fetchCats();
   return (
     <div className="Cat">  
     <div className='wrapper'>
-         {cats.map( (cat 
+         {cats.map( (cat, 
         //  handleAddProduct
          ) => (
           <>
