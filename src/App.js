@@ -5,8 +5,10 @@ import Navbar from "./Navbar"
 import Data from './Data'
 import React from "react";
 import Modal from './Modal'
+// import { Name } from '@faker-js/faker/name';
 // import Routing from "./Routing"
 // import { Container } from './App.styled';
+
 
 
 
@@ -21,6 +23,7 @@ const App = () => {
   const [show, setShow] = useState(false)
 
   const {cat} = Data;
+  
 
   const handleAddProduct = (product) => {
     const ProductExist = basket.find((cat) => cat.name === product.name);
