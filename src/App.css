@@ -33,6 +33,10 @@
     height: auto;
     object-fit: cover;
 }
+
+.addBasket:hover{
+    background-color: blue;
+}
 /* 
 * {
 	margin:opx;
