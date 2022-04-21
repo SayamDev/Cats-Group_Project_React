@@ -7,7 +7,7 @@ const Modal = ({basket, show, handleRemoveProduct, onClose}) => {
     return (
         <div>
         <div className='modal'>
-            <h2 className='modal-title'>Checkout</h2>
+            <h2 className='modal-title'>Items in Basket</h2>
             <div className='modal-body'>
                 {basket.map((item, i) => {
                     return (
@@ -16,7 +16,9 @@ const Modal = ({basket, show, handleRemoveProduct, onClose}) => {
                             <p>{item.name}</p>
                             <img src={item.image} alt="cat"/>
                             <h3>£{item.price}</h3>
-                            <button onClick={() => handleRemoveProduct(item)}>Delete</button>
+                            
+                            <button className='delete' onClick={() => handleRemoveProduct(item)}>X</button>
+                        
                             </div>
                     )
                 })}

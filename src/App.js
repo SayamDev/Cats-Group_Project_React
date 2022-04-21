@@ -30,7 +30,7 @@ const App = () => {
 
         <div className='App'>
         <div className='basketButton'>
-          <button onClick={() => setShow(true)}>The Basket</button>
+          <button className="checkout" onClick={() => setShow(true)}>Checkout</button>
           </div>
           <Modal 
           basket={basket}

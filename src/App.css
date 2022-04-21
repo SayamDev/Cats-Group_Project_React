@@ -1,61 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background-image: url("./paw background.jpeg");
 }
-
 .Cat {
-   border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
+    gap: 70px;
+    flex-wrap: wrap;
+    margin: 0;
+    border: 2px solid red;
 }
-
-.wrapper{
-    border: 2px solid blue;
-    width: 80%;
-    margin: 0 auto;
-    background-color: #F9DCC4;
-
-}
-
 .cat-container{
-    width: 25%;
-    border: 10px solid #FEC89A; 
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
+    border: 10px solid darkslategray;
+    background-color: white;
+    border-radius: 8%;
+    box-shadow: 10px 10px 25px grey;
+    font-family: 'Roboto', sans-serif;
 }
 
 .cat-container img{
-    max-width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    object-position: top;
+    border-radius: 15%;
+
 }
 
+
+.navBar {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 30px;
+
+}
 .addBasket:hover{
-    background-color: blue;
+    background-color: lightblue;
 }
-/* 
-* {
-	margin:opx;
-	padding:0px;
-	
-}
-img{
-	float: left;
-    width:  300px;
-    height: 300px;
-    object-fit: cover;
-	border-radius: 10px;
-
-}
-.Cat{
-	display:flex;
-	flex-direction: column;
-
-} */
 
 .App {
     display: flex;
@@ -65,31 +58,72 @@ img{
 .modal {
     width: 500px;
     background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-title {
     display:flex;
     justify-content: center ;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-body {
-    width: 25%;
-    border: 10px solid #FEC89A; 
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
     border-radius: 10px;
+    /* border: 10px solid darkslategray;
+    border-radius: 8%;
+    box-shadow: 10px 10px 25px grey; */
+    font-family: 'Roboto', sans-serif;
 }
 
 .modal-body img{
-    max-width: 100%;
-    height: auto;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
+    object-position: top;
+    border-radius: 15%;
+    font-family: 'Roboto', sans-serif;
 }
 
 .basketButton {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    position: absolute;
+}
+
+.checkout:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+.checkout {
+    border: none;
+    background-color: black;
+    color: white;
+
+
+}
+.modal-bottom {
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    position: absolute;
+    right: 30px;
+}
+
+.delete {
+    border: none;
+    background-color: red;
+    border-radius: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+
 }

@@ -58,14 +58,13 @@ const Data = ({handleAddProduct}) => {
     <div>
       {error}
        <div className="Cat">  
-       <div className='wrapper'></div>
         {cats.map((cat, i) => (
           <div key={i}>
             <div className='cat-container'> 
             <h3>{cat.name}</h3>
             <h4>{cat.species}</h4>
-            <p>£{cat.price}</p>
             <img src={cat.image} alt="cats"></img>
+            <p>£{cat.price}</p>
             <button className="addBasket" 
             onClick={() => handleAddProduct(cat)}
             >Add to Basket</button>
