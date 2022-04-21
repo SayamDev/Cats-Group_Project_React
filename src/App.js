@@ -19,6 +19,7 @@ const App = () => {
   const [basket, setBasket] = useState([]);
   const [itemCount, setItemCount] = React.useState(1);
   const [show, setShow] = useState(false)
+
   const {cat} = Data;
 
   const handleAddProduct = (product) => {

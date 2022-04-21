@@ -7,8 +7,8 @@ const Modal = (props) => {
     return (
         <div>
         <div className='modal'>
-            <h2 className='modal-title'>Modal Title</h2>
-            <div className='modal-body'>Modal Content</div>
+            <h2 className='modal-title'>Checkout</h2>
+            <div className='modal-body'>Thank you for using cats4lyfe</div>
         </div>
         <div className='modal-bottom'>
             <button onClick={props.onClose} className='button'>Close</button>

@@ -59,5 +59,20 @@ img{
 
 .App {
     display: flex;
-    justify-content: center;
+    justify-content: right;
+}
+
+.modal {
+    width: 500px;
+    background-color: white;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.modal-body {
+    padding: 10px;
+    border-top: 1px solid blue;
+    border-bottom: 1px solid black;
 }
