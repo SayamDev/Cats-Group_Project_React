@@ -3,9 +3,10 @@ import { faker } from '@faker-js/faker';
 import { useEffect, useState } from 'react'
 import React from 'react'
 
-const Data = () => {
+const Data = ({handleAddProduct}) => {
   const [cats, setCats] = useState([]);
   const [error, setError] = useState(null)
+  
 
 
   const fetchData = () => {
@@ -18,6 +19,7 @@ const Data = () => {
 
       array.push({ name, price, species });
     }
+
 
     return array;
   };
@@ -65,7 +67,7 @@ const Data = () => {
             <p>£{cat.price}</p>
             <img src={cat.image} alt="cats"></img>
             <button className="addBasket" 
-            // onClick={handleAddProduct(i)}
+            onClick={() => handleAddProduct(cat)}
             >Add to Basket</button>
             </div>
             </div>

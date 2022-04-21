@@ -42,10 +42,10 @@ const App = () => {
   // }
 
     const handleAddProduct = (i) => {
-      const newBasket = [...basket]
-      basket.push(i)
-      newBasket(setBasket)
+      setBasket([...basket, i])
     }
+    console.log(basket)
+    
     const handleRemoveProduct = (i) => {
       const removeBasket = [...basket]
       basket.splice(i)
@@ -59,7 +59,9 @@ const App = () => {
         <div className='App'>
 
           <button onClick={() => setShow(true)}>The Basket</button>
-          <Modal onClose={() => setShow(false)} show={show}/>
+          <Modal 
+          basket={basket}
+          onClose={() => setShow(false)} show={show}/>
 
         </div>
 
