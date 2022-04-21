@@ -47,9 +47,8 @@ const App = () => {
     console.log(basket)
     
     const handleRemoveProduct = (i) => {
-      const removeBasket = [...basket]
-      basket.splice(i)
-      removeBasket(setBasket)
+      const removeBasket = basket.filter(cat => cat.id != i.id)
+        setBasket(removeBasket)
     }
 
   return (
@@ -61,6 +60,7 @@ const App = () => {
           <button onClick={() => setShow(true)}>The Basket</button>
           <Modal 
           basket={basket}
+          handleRemoveProduct={handleRemoveProduct}
           onClose={() => setShow(false)} show={show}/>
 
         </div>

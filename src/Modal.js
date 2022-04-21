@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Modal = ({basket, onClose}) => {
-    // if (!basket) {
-    //     return null
-    // }
+const Modal = ({basket, onClose, handleRemoveProduct}) => {
+    if (!basket) {
+        return null
+    }
     return (
         <div>
         <div className='modal'>
@@ -14,12 +14,11 @@ const Modal = ({basket, onClose}) => {
                         <div>
                             <p>{item.name}</p>
                             <img src={item.image} alt="cat"/>
-
+                            <h3>£{item.price}</h3>
+                            <button onClick={() => handleRemoveProduct(item)}>Delete</button>
                             </div>
                     )
-
                 })}
-
             </div>
         </div>
         <div className='modal-bottom'>
