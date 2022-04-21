@@ -9,7 +9,7 @@
 //   )}
 //   <div>
 //     {basket.map((item) => (
-//       <div key={item.id} className="basket-list">
+//       <div key={i} className="basket-list">
 
 //     ))}
 //   </div>

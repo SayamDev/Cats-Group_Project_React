@@ -19,53 +19,59 @@ const App = () => {
   // const [error, setError] = useState(null)
 
   const [basket, setBasket] = useState([]);
-  const [itemCount, setItemCount] = React.useState(1);
   const [show, setShow] = useState(false)
+  // const [itemCount, setItemCount] = React.useState(1);
 
-  const {cat} = Data;
+  // const {cat} = Data;
   
 
-  const handleAddProduct = (product) => {
-    const ProductExist = basket.find((cat) => cat.name === product.name);
-    if (ProductExist) {
-      setBasket(
-        basket.map((cat) =>
-        cat.name === product.name
-        ? {...ProductExist, quantity: ProductExist.quantity + 1}
-        :cat
-      )
-      )
+  // const handleAddProduct = (product) => {
+  //   const ProductExist = basket.find((cat) => cat.name === product.name);
+  //   if (ProductExist) {
+  //     setBasket(
+  //       basket.map((cat) =>
+  //       cat.name === product.name
+  //       ? {...ProductExist, quantity: ProductExist.quantity + 1}
+  //       :cat
+  //     )
+  //     )
+  //   }
+  //   else {
+  //     setBasket([...basket, {...product, quantity: 1}])
+  //   }
+  // }
+
+    const handleAddProduct = (i) => {
+      const newBasket = [...basket]
+      basket.push(i)
+      newBasket(setBasket)
     }
-    else {
-      setBasket([...basket, {...product, quantity: 1}])
+    const handleRemoveProduct = (i) => {
+      const removeBasket = [...basket]
+      basket.splice(i)
+      removeBasket(setBasket)
     }
-  }
 
   return (
-    // <Container>
+
     <div>
-      {/* <Routes> */}
-      {/* <Wrapper> */}
+
         <div className='App'>
+
           <button onClick={() => setShow(true)}>The Basket</button>
           <Modal onClose={() => setShow(false)} show={show}/>
+
         </div>
+
         <Navbar />
-        {/* </Wrapper> */}
-        <Data handleAddProduct={handleAddProduct}/>
-        {/* <Routing */}
-          {/* //   */}
-          {/* /> */}
-        {/* <Routing  */}
-        {/* // cats={cats}  */}
-        {/* /> */}
-      {/* <Router/> */}
+        <Data 
+        handleAddProduct={handleAddProduct}
+        handleRemoveProduct={handleRemoveProduct}
+        />
+
     </div>
-    // </Container>
+
   )
-
-
-
 }
       
-export default App;
+export default App

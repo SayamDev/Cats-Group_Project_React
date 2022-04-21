@@ -16,7 +16,7 @@ const Data = () => {
       const price = faker.commerce.price(50, 1000);
       const species = faker.animal.cat();
 
-      array.push({ name, price });
+      array.push({ name, price, species });
     }
 
     return array;
@@ -65,7 +65,7 @@ const Data = () => {
             <p>£{cat.price}</p>
             <img src={cat.image} alt="cats"></img>
             <button className="addBasket" 
-          // onClick={handleAddProduct(cat)}
+            // onClick={handleAddProduct(i)}
             >Add to Basket</button>
             </div>
             </div>
