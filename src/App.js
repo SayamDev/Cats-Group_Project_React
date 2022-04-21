@@ -4,6 +4,7 @@ import './App.css';
 import Navbar from "./Navbar"
 import Data from './Data'
 import React from "react";
+import Modal from './Modal'
 // import Routing from "./Routing"
 // import { Container } from './App.styled';
 
@@ -17,7 +18,7 @@ const App = () => {
 
   const [basket, setBasket] = useState([]);
   const [itemCount, setItemCount] = React.useState(1);
-
+  const [show, setShow] = useState(false)
   const {cat} = Data;
 
   const handleAddProduct = (product) => {
@@ -41,6 +42,10 @@ const App = () => {
     <div>
       {/* <Routes> */}
       {/* <Wrapper> */}
+        <div className='App'>
+          <button onClick={() => setShow(true)}>The Basket</button>
+          <Modal onClose={() => setShow(false)} show={show}/>
+        </div>
         <Navbar />
         {/* </Wrapper> */}
         <Data handleAddProduct={handleAddProduct}/>
