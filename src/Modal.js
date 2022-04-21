@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Modal = ({basket, onClose, handleRemoveProduct}) => {
-    if (!basket) {
+const Modal = ({basket, show, handleRemoveProduct, onClose}) => {
+    if (!show) {
         return null
     }
     return (
@@ -12,6 +12,7 @@ const Modal = ({basket, onClose, handleRemoveProduct}) => {
                 {basket.map((item, i) => {
                     return (
                         <div>
+                         {/* <div className='modal-box' key={item.i}> */}
                             <p>{item.name}</p>
                             <img src={item.image} alt="cat"/>
                             <h3>£{item.price}</h3>

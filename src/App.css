@@ -68,11 +68,28 @@ img{
 }
 
 .modal-title {
+    display:flex;
+    justify-content: center ;
     margin: 0;
 }
 
 .modal-body {
-    padding: 10px;
-    border-top: 1px solid blue;
-    border-bottom: 1px solid black;
+    width: 25%;
+    border: 10px solid #FEC89A; 
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.modal-body img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.basketButton {
+    display: flex;
+    justify-content: right;
 }

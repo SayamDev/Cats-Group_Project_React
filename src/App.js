@@ -29,8 +29,9 @@ const App = () => {
     <div>
 
         <div className='App'>
-
+        <div className='basketButton'>
           <button onClick={() => setShow(true)}>The Basket</button>
+          </div>
           <Modal 
           basket={basket}
           handleRemoveProduct={handleRemoveProduct}
