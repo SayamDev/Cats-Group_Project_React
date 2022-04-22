@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/ElliotJuniper/Cats-Group/static/css/main.b647b212.css",
-    "main.js": "/ElliotJuniper/Cats-Group/static/js/main.e83f994e.js",
-    "static/media/paw background grey.jpeg": "/ElliotJuniper/Cats-Group/static/media/paw background grey.5d07a923b5d645cb74a2.jpeg",
-    "index.html": "/ElliotJuniper/Cats-Group/index.html",
-    "main.b647b212.css.map": "/ElliotJuniper/Cats-Group/static/css/main.b647b212.css.map",
-    "main.e83f994e.js.map": "/ElliotJuniper/Cats-Group/static/js/main.e83f994e.js.map"
+    "main.css": "/SayamDev/Cats-Group_Project_React/static/css/main.988b0047.css",
+    "main.js": "/SayamDev/Cats-Group_Project_React/static/js/main.e83f994e.js",
+    "static/media/paw background grey.jpeg": "/SayamDev/Cats-Group_Project_React/static/media/paw background grey.5d07a923b5d645cb74a2.jpeg",
+    "index.html": "/SayamDev/Cats-Group_Project_React/index.html",
+    "main.988b0047.css.map": "/SayamDev/Cats-Group_Project_React/static/css/main.988b0047.css.map",
+    "main.e83f994e.js.map": "/SayamDev/Cats-Group_Project_React/static/js/main.e83f994e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b647b212.css",
+    "static/css/main.988b0047.css",
     "static/js/main.e83f994e.js"
   ]
 }
