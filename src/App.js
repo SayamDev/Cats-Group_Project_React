@@ -20,7 +20,7 @@ const App = () => {
     console.log(basket)
     
     const handleRemoveProduct = (i) => {
-      const removeBasket = basket.filter(cat => cat.id != i.id)
+      const removeBasket = basket.filter(cat => cat.id !== i.id)
         setBasket(removeBasket)
     }
 
