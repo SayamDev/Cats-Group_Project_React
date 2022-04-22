@@ -12,9 +12,9 @@ const Data = ({handleAddProduct}) => {
   const fetchData = () => {
     const array = [];
 
-    for (let i = 0; i < 9; i++) {
+    for (let i = 0; i < 15; i++) {
       const name = faker.name.firstName();
-      const price = faker.commerce.price(50, 1000);
+      const price = faker.commerce.price(5, 20);
       const species = faker.animal.cat();
 
       array.push({ name, price, species });
@@ -64,7 +64,7 @@ const Data = ({handleAddProduct}) => {
             <h3 className='cat_name'>{cat.name}</h3>
             <h4 className='species'>{cat.species}</h4>
             <img src={cat.image} alt="cats"></img>
-            <p className='price'>£{cat.price}</p>
+            <p className='price'>£{cat.price} per month</p>
             <button className="addBasket" 
             onClick={() => handleAddProduct(cat)}
             >Add to Basket</button>

@@ -4,7 +4,7 @@ import React from 'react'
 const Navbar = () => {
     return (
         <div className='navBar'>
-            <h1>Cats 4 Sale</h1>
+            <h1>Rent a Cat</h1>
             {/* <Link to="/basket">Basket</Link> */}
         </div>
     )

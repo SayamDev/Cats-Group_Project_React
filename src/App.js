@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { BiShoppingBag } from "react-icons/bi";
 import './App.css';
 import Navbar from "./Navbar"
 import Data from './Data'
@@ -30,7 +31,7 @@ const App = () => {
 
         <div className='App'>
         <div className='basketButton'>
-          <button className="checkout" onClick={() => setShow(true)}>Checkout</button>
+          <BiShoppingBag className="checkout" onClick={() => setShow(true)}></BiShoppingBag>
           </div>
           <Modal 
           basket={basket}
