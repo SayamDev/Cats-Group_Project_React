@@ -61,10 +61,10 @@ const Data = ({handleAddProduct}) => {
         {cats.map((cat, i) => (
           <div key={i}>
             <div className='cat-container'> 
-            <h3>{cat.name}</h3>
-            <h4>{cat.species}</h4>
+            <h3 className='cat_name'>{cat.name}</h3>
+            <h4 className='species'>{cat.species}</h4>
             <img src={cat.image} alt="cats"></img>
-            <p>£{cat.price}</p>
+            <p className='price'>£{cat.price}</p>
             <button className="addBasket" 
             onClick={() => handleAddProduct(cat)}
             >Add to Basket</button>
